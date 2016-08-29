@@ -6,11 +6,14 @@ class UtilPostgres:
 		content ="Proccess PostgreSQL\n"
 		content += "1. Backup\n"
 		content += "2. Restore\n"
+		content += "3. Salir\n"
 		content += "Selection ->"
 
 		menu=raw_input(content)
-		print menu
 
+		if(menu==3){
+			break;
+		}
 
 
 obj=UtilPostgres()
