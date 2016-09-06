@@ -11,9 +11,10 @@ class UtilPostgres:
 
 		menu=raw_input(content)
 
-		if(menu==3){
+		if(menu==3):
+			print menu
 			break;
-		}
+		
 
 
 obj=UtilPostgres()
