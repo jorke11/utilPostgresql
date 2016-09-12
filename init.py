@@ -49,7 +49,7 @@ class UtilPostgres:
 			elif menu == "5":
 				print "End!"
 				break;
-	
+	#method for get bin of database
 	def pg_dump(self):
 		config = configparser.ConfigParser()
 		config.read('config.ini')
@@ -85,7 +85,7 @@ class UtilPostgres:
 
 		os.system('clear')
 		print "Path update: "+config.get("pg_dump","path")+"\n"
-
+	#method for get restore of database
 	def pg_restore(self):
 		config = configparser.ConfigParser()
 		config.read('config.ini')
@@ -121,7 +121,7 @@ class UtilPostgres:
 		os.system('clear')
 		print "Path update: "+config.get("pg_restore","path")+"\n"
 
-
+		
 	def backUp(self,db,path):
 
 		config = configparser.ConfigParser()
